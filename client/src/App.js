@@ -1,17 +1,26 @@
-import React from 'react'
-import './App.css'
-// import AdminDashboard from './pages/AdminDashboard'
-// import StudentDashboard from './pages/StudentDashboard'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import AdminDashboard from "./pages/AdminDashboard";
+import AdminLogin from "./pages/AdminLogin";
+import Landing from "./pages/LandingPage/Landing";
+import StudentDashboard from "./pages/StudentDashboard";
+import Login from "./pages/StudentLogin";
+import Videocall from "./pages/VideoCall";
 
 function App() {
-
   return (
     <div className="App">
-      {/* <StudentDashboard /> */}
-      {/* <AdminDashboard /> */}
-      <h1>Hello</h1>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/adminLogin" element={<AdminLogin />} />
+        <Route path="/studentLogin" element={<Login />} />
+        <Route path="/studentDashboard" element={<StudentDashboard />} />
+        <Route path="/adminDashboard" element={<AdminDashboard />} />
+        <Route path="/videoCall" element={<Videocall />} />
+      </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

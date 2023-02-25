@@ -1,0 +1,13 @@
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    background-color:#add8e6;
+    gap: 6vw;
+    padding: 2vw;
+}
+#SearchBar{
+    margin-left: 180%;
+    padding: 5px;
+    border-radius: 10px;
+}
