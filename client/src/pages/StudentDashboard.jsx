@@ -1,9 +1,16 @@
 import React from "react";
 import { selectUser } from "../providers/userSlice";
+// import { selectUser } from "./Siren.mp3";
 import { useSelector } from "react-redux";
 
 import { useNavigate } from "react-router";
 const StudentDashboard = () => {
+  let audio = new Audio("./Siren.mp3");
+  const start = () => {
+    audio.play();
+    console.log("pla")
+  };
+
   const user = useSelector(selectUser);
   const navigate = useNavigate();
   return (
@@ -92,7 +99,10 @@ const StudentDashboard = () => {
                 }}
                 className="w-[30%] transform bg-blue-400 hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl"
               >
-                <div class="opacity-10 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl">
+                <div
+                  onClick={start}
+                  class="opacity-10 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl"
+                >
                   Emergency
                 </div>
               </div>
