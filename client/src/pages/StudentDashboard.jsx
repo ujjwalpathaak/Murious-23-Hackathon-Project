@@ -25,11 +25,11 @@ const StudentDashboard = () => {
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                 }}
-                className="w-[30%] transform  hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl"
+                className="w-[30%] transform transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl"
               >
                 <div
                   onClick={() => navigate("/videoCall")}
-                  class="opacity-0 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl"
+                  class="opacity-10 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl"
                 >
                   Call Doctor
                 </div>
@@ -42,13 +42,17 @@ const StudentDashboard = () => {
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                 }}
-                className="w-[30%] emr-data_v03  transform bg-blue-400 hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl"
+                className="w-[30%] emr-data_v03  transform transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl"
               >
-                <div onClick={() => navigate("/medicalCard")} class="opacity-0 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl">
-                  Medical Card
+                <div
+                  onClick={() => navigate("/medicalCard")}
+                  className="opacity-10 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl"
+                >
+                  Medical Records
                 </div>
               </div>
               {/* Medicine card */}
+
               <div
                 style={{
                   backgroundImage: `url(https://thumbs.dreamstime.com/b/d-isometric-flat-vector-concept-online-pharmacy-store-medicine-ordering-mobile-app-d-isometric-flat-vector-concept-online-183269248.jpg)`,
@@ -56,32 +60,48 @@ const StudentDashboard = () => {
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                 }}
-                className="w-[30%] transform  bg-blue-400 hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl"
+                className="w-[30%] transform transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl"
               >
-                <div class="opacity-0 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl">
+                <div class="opacity-10 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl">
                   Order Medicines
                 </div>
               </div>
             </div>
             <div className="w-full h-[50%] flex justify-center items-center gap-x-6">
               {/* Past record */}
-              <div className="w-[30%] transform bg-blue-400 hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl bg-slate-400">
-                <div class="opacity-0 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl">
-                  Past Records
+              <div
+                style={{
+                  backgroundImage: `url(https://media.istockphoto.com/id/1222748836/vector/online-medicine-concept-vector-illustration-cartoon-flat-tiny-woman-patient-character-makes.jpg?s=612x612&w=0&k=20&c=bwwmbFhzlKt_WDHKkHY0JpdzSOpuOJGXqH4dEqsJpIg=)`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                }}
+                className="w-[30%] transform bg-blue-400 hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl"
+              >
+                <div class="opacity-10 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl">
+                  Book Appointment
                 </div>
               </div>
               {/* video call */}
-              <div className="w-[30%] transform bg-blue-400 hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl bg-slate-500">
-                <div class="opacity-0 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl">
-                  Past Records
+              <div
+                style={{
+                  backgroundImage: `url(https://thumbs.dreamstime.com/b/emergency-ambulance-vector-illustration-medical-vehicle-ambulance-car-flat-style-emergency-ambulance-vector-illustration-121976922.jpg)`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                }}
+                className="w-[30%] transform bg-blue-400 hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl"
+              >
+                <div class="opacity-10 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl">
+                  Emergency
                 </div>
               </div>
               {/* Medicine card */}
-              <div className="w-[30%]  transform bg-blue-400 hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl bg-slate-600">
-                <div class="opacity-0 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl">
+              {/* <div className="w-[30%]  transform bg-blue-400 hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl">
+                <div class="opacity-10 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl">
                   Past Records
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -20,10 +20,8 @@ function App() {
         <Route path="/studentDashboard" element={<StudentDashboard />} />
         <Route path="/adminDashboard" element={<AdminDashboard />} />
         <Route path="/videoCall" element={<Videocall />} />
-        <Route path="/medicalCard" element={<HealthCard/>} />
-
+        <Route path="/medicalCard" element={<HealthCard />} />
         <Route path="/giveMedicalLeave" element={<GiveMedicalLeave />} />
-
       </Routes>
     </div>
   );

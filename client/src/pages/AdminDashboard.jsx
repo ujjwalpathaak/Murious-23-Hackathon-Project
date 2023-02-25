@@ -28,7 +28,7 @@ const AdminDashboard = () => {
               >
                 <div
                   onClick={() => navigate("/videoCall")}
-                  className="opacity-0 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl"
+                  className="opacity-10 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl"
                 >
                   Call Student
                 </div>
@@ -45,7 +45,7 @@ const AdminDashboard = () => {
               >
                 <div
                   onClick={() => navigate("/giveMedicalLeave")}
-                  class="opacity-0 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl"
+                  class="opacity-10 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl"
                 >
                   Medical Leave
                 </div>
@@ -60,7 +60,7 @@ const AdminDashboard = () => {
                 }}
                 className="w-[30%] transform  bg-blue-400 hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl"
               >
-                <div class="opacity-0 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl">
+                <div class="opacity-10 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl">
                   Medicine Stock
                 </div>
               </div>
@@ -74,9 +74,9 @@ const AdminDashboard = () => {
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                 }}
-                className="w-[30%] transform bg-blue-400 hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl bg-slate-400"
+                className="w-[30%] transform hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl bg-slate-400"
               >
-                <div class="opacity-0 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl">
+                <div class="opacity-10 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl">
                   Send Medical Records
                 </div>
               </div>
@@ -88,15 +88,9 @@ const AdminDashboard = () => {
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                 }}
-                className="w-[30%] transform bg-blue-400 hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl bg-slate-500"
+                className="w-[30%] transform hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl bg-slate-500"
               >
-                <div class="opacity-0 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl">
-                  Past Records
-                </div>
-              </div>
-              {/* Medicine card */}
-              <div className="w-[30%]  transform bg-blue-400 hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl bg-slate-600">
-                <div class="opacity-0 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl">
+                <div class="opacity-10 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl">
                   Past Records
                 </div>
               </div>
