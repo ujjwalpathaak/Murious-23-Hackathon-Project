@@ -54,7 +54,7 @@ function HealthCard() {
                                     <thead>
                                         <tr>
                                             <th scope="col">Date</th>
-                                            <th scope="col">Description</th>
+                                            <th scope="col">Description of the Problem</th>
                                             <th scope="col">Medical Advice Given</th>
                                             <th scope="col">Medical Issued</th>
                                         </tr>
