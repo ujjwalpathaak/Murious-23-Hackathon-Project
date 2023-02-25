@@ -36,33 +36,60 @@ const AdminDashboard = () => {
               {/* video call */}
               <div
                 style={{
-                  backgroundImage: `url(https://media.istockphoto.com/id/1139096151/vector/patient-paper-medical-record-flat-vector-illustration.jpg?s=612x612&w=0&k=20&c=EpiseziE5_qy5z9bg9vNrl2VXveGwr3KCM-LKAq4DQs=)`,
+                  backgroundImage: `url(https://media.istockphoto.com/id/1189107436/vector/young-man-with-cold-symptoms-like-fever-headache-and-sore-throat-measuring-temperature-in.jpg?s=612x612&w=0&k=20&c=zAUIfuwD4Vgrw-3XxKJZyj6zKLyZFzFyddGf6VVo6Gw=)`,
                   backgroundPosition: "center",
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                 }}
                 className="w-[30%] emr-data_v03  transform bg-blue-400 hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl"
               >
-                <div class="opacity-0 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl">
-                  Medical Records
+                <div
+                  onClick={() => navigate("/giveMedicalLeave")}
+                  class="opacity-0 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl"
+                >
+                  Medical Leave
                 </div>
               </div>
               {/* Medicine card */}
-              <div className="w-[30%] transform  bg-blue-400 hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl">
+              <div
+                style={{
+                  backgroundImage: `url(https://thumbs.dreamstime.com/b/modern-pharmacy-shelves-medicaments-drugs-modern-pharmacy-shelves-medicaments-drugs-healthcare-medical-170691016.jpg)`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                }}
+                className="w-[30%] transform  bg-blue-400 hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl"
+              >
                 <div class="opacity-0 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl">
-                  Past Records
+                  Medicine Stock
                 </div>
               </div>
             </div>
             <div className="w-full h-[50%] flex justify-center items-center gap-x-6">
               {/* Past record */}
-              <div className="w-[30%] transform bg-blue-400 hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl bg-slate-400">
+              <div
+                style={{
+                  backgroundImage: `url(https://img.freepik.com/free-vector/emails-concept-illustration_114360-1217.jpg?w=2000)`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                }}
+                className="w-[30%] transform bg-blue-400 hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl bg-slate-400"
+              >
                 <div class="opacity-0 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl">
-                  Past Records
+                  Send Medical Records
                 </div>
               </div>
               {/* video call */}
-              <div className="w-[30%] transform bg-blue-400 hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl bg-slate-500">
+              <div
+                style={{
+                  backgroundImage: `url(https://media.istockphoto.com/id/1350649897/vector/records-management-concept.jpg?s=612x612&w=0&k=20&c=BX1oVBsB7lAx-AxTNU6XyvgLYpd8qpGFvHWgTjmPSVM=)`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                }}
+                className="w-[30%] transform bg-blue-400 hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl bg-slate-500"
+              >
                 <div class="opacity-0 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl">
                   Past Records
                 </div>

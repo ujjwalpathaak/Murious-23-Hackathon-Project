@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import AdminDashboard from "./pages/AdminDashboard";
 import AdminLogin from "./pages/AdminLogin";
+import GiveMedicalLeave from "./pages/GiveMedicalLeave";
 import Landing from "./pages/LandingPage/Landing";
 import StudentDashboard from "./pages/StudentDashboard";
 import Login from "./pages/StudentLogin";
@@ -18,6 +19,7 @@ function App() {
         <Route path="/studentDashboard" element={<StudentDashboard />} />
         <Route path="/adminDashboard" element={<AdminDashboard />} />
         <Route path="/videoCall" element={<Videocall />} />
+        <Route path="/giveMedicalLeave" element={<GiveMedicalLeave />} />
       </Routes>
     </div>
   );
