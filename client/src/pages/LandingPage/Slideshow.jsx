@@ -15,7 +15,7 @@ function Slideshow() {
   const settings = {
     infinite: true,
     lazyLoad: true,
-    speed: 300,
+    speed: 500,
     slidesToShow: 3,
     centerMode: true,
     centerPadding: 0,
