@@ -49,9 +49,17 @@ const StudentDashboard = () => {
                 </div>
               </div>
               {/* Medicine card */}
-              <div className="w-[30%] transform  bg-blue-400 hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl">
+              <div
+                style={{
+                  backgroundImage: `url(https://thumbs.dreamstime.com/b/d-isometric-flat-vector-concept-online-pharmacy-store-medicine-ordering-mobile-app-d-isometric-flat-vector-concept-online-183269248.jpg)`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                }}
+                className="w-[30%] transform  bg-blue-400 hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl"
+              >
                 <div class="opacity-0 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl">
-                  Past Records
+                  Order Medicines
                 </div>
               </div>
             </div>
