@@ -44,8 +44,8 @@ const StudentDashboard = () => {
                 }}
                 className="w-[30%] emr-data_v03  transform bg-blue-400 hover:bg-blue-600 transition duration-500 hover:scale-105 point cursor-pointer flex justify-center items-center h-[80%] rounded-xl"
               >
-                <div class="opacity-0 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl">
-                  Medical Records
+                <div onClick={() => navigate("/medicalCard")} class="opacity-0 hover:opacity-100 hover:bg-black/50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-3xl text-white font-semibold rounded-xl">
+                  Medical Card
                 </div>
               </div>
               {/* Medicine card */}
